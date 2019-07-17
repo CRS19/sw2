@@ -27,6 +27,7 @@ empleadoCtrl.editEmpleado = async(req, res) => {
     const empleado = {
         nombre: req.body.nombre,
         apellido: req.body.apellido,
+        clave: req.body.clave,
         correp: req.body.correp,
     }
     await Empleado.findByIdAndUpdate(id, {$set: empleado}, {new: true} );
