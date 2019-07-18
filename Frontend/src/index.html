@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <title>App</title>
   <base href="/">
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
   <style>
     #rudr_instafeed{
     list-style:none  
@@ -56,6 +57,5 @@ window.mishaProcessResult = function( data ) {
 scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/recent?access_token=' + token + '&count=' + num_photos + '&callback=mishaProcessResult' );
 document.body.appendChild( scrElement );
 </script>
-
 </body>
 </html>
